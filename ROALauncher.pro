@@ -59,12 +59,12 @@ win32 {
 # Linux stuff
 unix {
     INCLUDEPATH += "/home/mgysin/Downloads/SFML-2.0-rc/include"
-    INCLUDEPATH += "/usr/local/include/"
-    LIBS += "/home/mgysin/Downloads/SFML-2.0-rc/lib/libsfml-audio.so"
-    LIBS += "/home/mgysin/Downloads/SFML-2.0-rc/lib/libsfml-system.so"
+    INCLUDEPATH += "/usr/include/"
+    #LIBS += "/home/mgysin/Downloads/SFML-2.0-rc/lib/libsfml-audio.so"
+    #LIBS += "/home/mgysin/Downloads/SFML-2.0-rc/lib/libsfml-system.so"
     #LIBS += "/usr/local/lib/libtorrent-rasterbar.so"
     #LIBS += "/usr/local/lib/"
-    LIBS += -lboost_filesystem -lboost_system -larchive
+    LIBS += -lboost_filesystem -lboost_system -larchive -lsfml-audio -lsfml-system -ltorrent-rasterbar
     CONFIG += link_pkgconfig
     PKGCONFIG += libtorrent-rasterbar
 }
