@@ -3,17 +3,18 @@ Relics of Annorath Launcher
 
 1. Prerequisites
 
-- qt5
+- qt5 (core gui network webkitwidgets xml )
 - icu
 - openssl
 - libtorrent-rasterbar
+- sfml
 - boost
 
 2. Compile
 
-- qmake -project
-- qmake
-- make
+- lrelease ROALauncher.pro
+- qmake-qt5 ROALauncher.pro -o Makefile
+- make 
 
 3. Installtion
 
